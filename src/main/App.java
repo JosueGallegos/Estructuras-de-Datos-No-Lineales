@@ -26,6 +26,8 @@ public class App {
         System.out.println();
         arbolBinario.postOrdenLoop(nodeRoot);
         System.out.println("PosOrden");
+        arbolBinario.postOrderRecursivo(nodeRoot);
+        System.out.println("PosOrden");
 
 
         

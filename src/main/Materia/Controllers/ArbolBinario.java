@@ -60,11 +60,21 @@ public class ArbolBinario {
         while (!stack2.isEmpty()) {
             Node node = stack2.pop();
             System.out.print(node.getValue()+" - ");
-            //System.out.print(node.getValue() + "  ");
+            System.out.print(node.getValue() + "  ");
            
             
            
         }
+    }
+    public void postOrderRecursivo(Node node){
+        if (node !=null) {
+           postOrderRecursivo(node.getLeft());
+           postOrderRecursivo(node.getRight());
+           System.out.print(node.getValue()+" - ");
+            
+        }
+       
+    
     }
     
     
