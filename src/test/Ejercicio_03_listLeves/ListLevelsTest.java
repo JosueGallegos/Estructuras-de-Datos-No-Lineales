@@ -26,7 +26,7 @@ public class ListLevelsTest {
         assertEquals(4, levels.get(0).get(0).getValue());
         assertEquals(2, levels.get(1).get(0).getValue());
         assertEquals(7, levels.get(1).get(1).getValue());
-        assertEquals(1, levels.get(2).get(0).getValue());
+        assertEquals(1, levels.get(2).get(0).getValue());   
         assertEquals(3, levels.get(2).get(1).getValue());
         assertEquals(6, levels.get(2).get(2).getValue());
         assertEquals(9, levels.get(2).get(3).getValue());
