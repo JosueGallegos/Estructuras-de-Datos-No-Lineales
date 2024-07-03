@@ -1,7 +1,12 @@
 package main;
+import java.util.HashSet;
+
 import main.Materia.Controllers.AVLTree;
 import main.Materia.Controllers.ArbolBinario;
+import main.Materia.Controllers.Graph;
+import main.Materia.Controllers.Sets;
 import main.Materia.Models.Node;
+import main.Materia.Models.NodeGraph;
 /* 
  *
  * 
@@ -39,8 +44,42 @@ public class App {
         }
 
 
-        
+        runGraph();
+        runSet();
+
     }
+    private static void runSet(){
+        new Sets();
+    }
+    private static void runGraph(){
+        Graph graph = new Graph();
+
+        //NodeGraph node1 = new NodeGraph(1);
+        //NodeGraph node2 = new NodeGraph(2);
+        //NodeGraph node3 = new NodeGraph(3);
+        //NodeGraph node4 = new NodeGraph(4);
+        //NodeGraph node5 = new NodeGraph(5);
+
+        NodeGraph node1 = graph.addNode(1);
+        NodeGraph node2 = graph.addNode(2);
+        NodeGraph node3 = graph.addNode(3);
+        NodeGraph node4 = graph.addNode(4);
+        NodeGraph node5 = graph.addNode(5);
+
+        graph.addEdge(node1, node2);
+        graph.addEdge(node1, node3);
+        graph.addEdge(node2, node1);
+        graph.addEdge(node2, node4);
+        graph.addEdge(node3, node1);
+    
+
+
+        graph.printGraph();
+
+        
+
+    }
+
 
 
 }
